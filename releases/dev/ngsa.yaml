@@ -28,3 +28,4 @@ spec:
       zone: "Az-WestUS2"
     cert:
       name: ngsa-cert
+
