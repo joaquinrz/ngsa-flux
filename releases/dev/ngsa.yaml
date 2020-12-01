@@ -2,8 +2,8 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: podinfo-dev
-  namespace: dev
+  name: ngsa-dev
+  namespace: joaquin-dev
   annotations:
     fluxcd.io/automated: "true"
     #filter.fluxcd.io/chart-image: glob:dev-*
@@ -12,7 +12,7 @@ spec:
   chart:
     git: git@github.com:joaquinrz/ngsa-flux
     path: charts/ngsa
-    ref: dev
+    ref: main
   values:
     image:
       repository: joaquinrodriguez/ngsa
