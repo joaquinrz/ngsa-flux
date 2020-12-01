@@ -8,7 +8,7 @@ metadata:
     fluxcd.io/automated: "true"
     #filter.fluxcd.io/chart-image: glob:dev-*
 spec:
-  releaseName: podinfo-dev
+  releaseName: ngsa-flux-joaquin
   chart:
     git: git@github.com:joaquinrz/ngsa-flux
     path: charts/ngsa
@@ -17,7 +17,6 @@ spec:
     image:
       repository: joaquinrodriguez/ngsa
       tag: beta
-    
     ingress:
       hosts:
         - temp.io
@@ -27,6 +26,5 @@ spec:
       args: []
       region: "temp"
       zone: "temp"
-    
     cert:
       name: ngsa-cert
