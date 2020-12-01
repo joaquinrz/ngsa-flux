@@ -24,7 +24,7 @@ spec:
       - /
     app:
       args: []
-      region: "temp"
-      zone: "temp"
+      region: "temp2"
+      zone: "temp2"
     cert:
       name: ngsa-cert
