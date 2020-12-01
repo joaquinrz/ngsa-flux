@@ -2,13 +2,13 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: ngsa-dev
+  name: ngsa-mem-dev
   namespace: joaquin-dev
   annotations:
     fluxcd.io/automated: "true"
     #filter.fluxcd.io/chart-image: glob:dev-*
 spec:
-  releaseName: ngsa-dev
+  releaseName: ngsa-mem-dev
   chart:
     git: git@github.com:joaquinrz/ngsa-flux
     path: charts/ngsa
@@ -19,11 +19,11 @@ spec:
       tag: beta
     ingress:
       hosts:
-        - ngsa-dev.cse.ms
+        - ngsa-mem-dev.cse.ms
     paths:
       - /
     app:
-      args: []
+      args: [["--in-memory"]]
       region: "West"
       zone: "Az-WestUS2"
     cert:
