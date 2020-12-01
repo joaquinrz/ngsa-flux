@@ -6,17 +6,14 @@ metadata:
   namespace: dev
   annotations:
     fluxcd.io/automated: "true"
-    filter.fluxcd.io/chart-image: glob:dev-*
+    #filter.fluxcd.io/chart-image: glob:dev-*
 spec:
   releaseName: podinfo-dev
   chart:
-    git: git@github.com:fluxcd/helm-operator-get-started
-    path: charts/podinfo
-    ref: master
+    git: git@github.com:joaquinrz/ngsa-flux
+    path: charts/ngsa
+    ref: dev
   values:
     image:
-      repository: stefanprodan/podinfo
-      tag: dev-hdtwcel9
-    replicaCount: 1
-    hpa:
-      enabled: false
+      repository: joaquinrodriguez/ngsa
+      tag: beta
