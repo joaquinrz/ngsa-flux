@@ -23,7 +23,7 @@ spec:
     paths:
       - /
     app:
-      args: []
+      args: [""]
       region: "West"
       zone: "Az-WestUS2"
     cert:
