@@ -17,3 +17,16 @@ spec:
     image:
       repository: joaquinrodriguez/ngsa
       tag: beta
+    
+    ingress:
+      hosts:
+        - temp.io
+    paths:
+      - /
+    app:
+      args: []
+      region: "temp"
+      zone: "temp"
+    
+    cert:
+      name: ngsa-cert
