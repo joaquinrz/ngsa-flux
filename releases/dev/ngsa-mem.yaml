@@ -23,7 +23,7 @@ spec:
     paths:
       - /
     app:
-      args: [["--in-memory"]]
+      args: ["--in-memory"]
       region: "West"
       zone: "Az-WestUS2"
     cert:
