@@ -16,12 +16,12 @@ spec:
   values:
     image:
       repository: joaquinrodriguez/ngsa
-      tag: beta
+      tag: beta-16.8.3-3
     ingress:
       hosts:
-        - ngsa-dev.cse.ms
+      - ngsa-dev.cse.ms
     paths:
-      - /
+    - /
     app:
       args: [""]
       region: "West"
